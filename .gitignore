@@ -1,32 +1,21 @@
-# Prerequisites
-*.d
+  int ledG = 12;
+  int ledY = 10;
+  int ledR = 8;
+void setup() {
+  pinMode(ledG, OUTPUT);
+  pinMode(ledY, OUTPUT);
+  pinMode(ledR, OUTPUT);
+}
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+void loop() {
+  digitalWrite(ledG, HIGH);
+  delay(1000);
+  digitalWrite(ledG, LOW);
+  digitalWrite(ledY, HIGH);
+  delay(1000);
+  digitalWrite(ledY, LOW);
+  digitalWrite(ledR, HIGH);
+  delay(1000);
+  digitalWrite(ledR, LOW);
+  digitalWrite(ledG, HIGH);
+}
